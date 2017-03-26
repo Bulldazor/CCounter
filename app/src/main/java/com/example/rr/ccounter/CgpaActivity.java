@@ -3,6 +3,7 @@ package com.example.rr.ccounter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,6 +43,8 @@ public class CgpaActivity extends AppCompatActivity {
 
     }
 
+
+
     public void InputMethod(){
         if(TextUtils.isEmpty(ext1.getText().toString())|| TextUtils.isEmpty(ext2.getText().toString())){
             return;
@@ -49,6 +52,17 @@ public class CgpaActivity extends AppCompatActivity {
         else{
             number1=Float.parseFloat(ext1.getText().toString());
             number2=Float.parseFloat(ext2.getText().toString());
+        }
+    }
+    //for back button
+    public  boolean onOptionItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case android.R.id.home:
+                //app icon in action bar clicked;goto parent activity
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item)
         }
     }
 }
