@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_claculator_actvty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#343232"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Put A Nuimber Here"
+        android:textColorHint="@android:color/white"
+        android:ems="20"
+
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        android:id="@+id/editTextnumber2"
+        android:layout_below="@+id/editTextNumber1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Addition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/addcon"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/buttonAdd"
+        android:background="@drawable/button"
+        android:layout_below="@+id/editTextnumber2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="69dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Put A Number Here"
+        android:ems="20"
+        android:textColorHint="@android:color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="28dp"
+        android:id="@+id/editTextNumber1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/editTextnumber2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Multiplication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:id="@+id/buttonMul"
+        android:drawableLeft="@drawable/multiplicationsign"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/buttonMin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDiv"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/division"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/buttonMul"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:text="Subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:drawableLeft="@drawable/minus"
+        android:background="@drawable/button"
+        android:id="@+id/buttonMin"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
